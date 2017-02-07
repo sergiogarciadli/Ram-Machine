@@ -25,6 +25,9 @@ public class InputUnit
 
   public int getValue ()
   {
-    return (int)inputTape.get(readingHead); //Typecast pa convertir el valor a int
+    int value = (int)inputTape.get(readingHead); //Typecast pa convertir el valor a int
+    readingHead++;
+
+    return value;
   }
 }

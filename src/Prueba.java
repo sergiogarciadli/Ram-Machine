@@ -8,9 +8,27 @@ class Prueba
 
     ArrayList prueba = new ArrayList();
     prueba.add(1);
+    prueba.add(2);
 
     InputUnit in = new InputUnit(prueba);
 
-    System.out.println(prueba.size());
+    System.out.println(in.inputTape.size());
+
+    int aux = in.getValue();
+
+    System.out.println(aux);
+
+
+    OutputUnit ou = new OutputUnit();
+    ou.setValue(aux);
+
+    System.out.println(ou.outputTape.size());
+
+    aux = in.getValue();
+    ou.setValue(aux);
+
+    System.out.println(ou.outputTape.size());
+
+
   }
 }
